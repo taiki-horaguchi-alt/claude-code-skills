@@ -12,6 +12,23 @@ Claude Code (`~/.claude/skills/`) で使用するカスタムスキル集。
 | [creator-marketing-system](skills/creator-marketing-system/) | クリエイター向け対話型マーケティング戦略フレームワーク | `/creator-marketing-system` |
 | [diary](skills/diary/) | 今日の日付で日記テンプレートファイルを作成 | `/diary` |
 
+### X（旧Twitter）運用
+
+| Skill | Description | Command |
+|-------|-------------|---------|
+| [x-manager](skills/x-manager/) | X運用スキルを統括。分析→戦略→コンテンツ作成をワンストップ実行 | `/x-manager` |
+| [x-daily](skills/x-daily/) | 自分のX投稿データを分析し日次パフォーマンスレポートを生成 | `/x-daily` |
+| [x-trend](skills/x-trend/) | 競合アカウント・トレンドデータを分析し市場動向レポートを生成 | `/x-trend` |
+| [x-writing](skills/x-writing/) | 分析・リサーチ結果を踏まえてX投稿文章を生成 | `/x-write` |
+| [x-image](skills/x-image/) | X投稿用画像の仕様設計・プロンプト生成 | `/x-image` |
+
+### リサーチ・データ分析
+
+| Skill | Description | Command |
+|-------|-------------|---------|
+| [multi-stage-research](skills/multi-stage-research/) | サブエージェント並列調査→統合→ファクトチェック→レポート生成 | `/research` |
+| [survey-reader](skills/survey-reader/) | Supabase/ローカルのアンケートデータを読み込み分析 | `/survey-read` |
+
 ### 開発ワークフロー
 
 | Skill | Description |
