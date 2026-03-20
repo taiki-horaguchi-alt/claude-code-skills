@@ -1,6 +1,6 @@
-# Claude Code Skills
+# Claude Code Skills & Hooks
 
-Claude Code (`~/.claude/skills/`) で使用するカスタムスキル集。
+Claude Code のカスタムスキル (`~/.claude/skills/`) と自動フック集。
 
 ## Skills一覧
 
@@ -59,6 +59,12 @@ Claude Code (`~/.claude/skills/`) で使用するカスタムスキル集。
 | [postgres-patterns](skills/postgres-patterns/) | PostgreSQL クエリ最適化・スキーマ設計 |
 | [clickhouse-io](skills/clickhouse-io/) | ClickHouse 分析クエリ最適化 |
 | [project-guidelines-example](skills/project-guidelines-example/) | プロジェクト固有スキルのテンプレート例 |
+
+## Hooks一覧
+
+| Hook | Trigger | Description |
+|------|---------|-------------|
+| [session-log](hooks/session-log/) | Stop | セッション終了時に会話ログを `~/Dev/.claude-logs/` に自動保存 |
 
 ## インストール
 
