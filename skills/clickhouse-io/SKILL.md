@@ -1,6 +1,6 @@
 ---
 name: clickhouse-io
-description: ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads.
+description: ClickHouseのクエリ最適化、分析パターン、データエンジニアリングのベストプラクティス集
 ---
 
 # ClickHouse Analytics Patterns

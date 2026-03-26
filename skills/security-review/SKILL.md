@@ -1,6 +1,6 @@
 ---
 name: security-review
-description: Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or implementing payment/sensitive features. Provides comprehensive security checklist and patterns.
+description: 認証、ユーザー入力処理、シークレット管理、APIエンドポイント、決済機能のセキュリティチェックリストとパターン集
 ---
 
 # Security Review Skill

@@ -1,6 +1,6 @@
 ---
 name: iterative-retrieval
-description: Pattern for progressively refining context retrieval to solve the subagent context problem
+description: サブエージェントのコンテキスト問題を解決する段階的なコンテキスト検索パターン
 ---
 
 # Iterative Retrieval Pattern
