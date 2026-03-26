@@ -46,5 +46,5 @@ git commit -m "feat: sync skill '$SKILL_NAME'" 2>> "$LOG_FILE"
 log "Committed skill: $SKILL_NAME"
 
 # バックグラウンドでpush（hookの実行時間を短縮）
-git push origin main >> "$LOG_FILE" 2>&1 &
+git push origin master >> "$LOG_FILE" 2>&1 &
 log "Push initiated for $SKILL_NAME"
