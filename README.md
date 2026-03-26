@@ -1,72 +1,59 @@
 # Claude Code Skills & Hooks
 
+<!-- AUTO-GENERATED: generate-readme.sh で自動生成。手動編集しないでください -->
+
 Claude Code のカスタムスキル (`~/.claude/skills/`) と自動フック集。
 
-## Skills一覧
+**29 skills** | **2 hooks**
 
-### オリジナル
+---
 
-| Skill | Description | Command |
-|-------|-------------|---------|
-| [worker-assignment](skills/worker-assignment/) | 設計書のタスクに作業者（ツール＋モデル）を自動割り当てし、コスト見積もりを付与 | `/assign-workers` |
-| [creator-marketing-system](skills/creator-marketing-system/) | クリエイター向け対話型マーケティング戦略フレームワーク | `/creator-marketing-system` |
-| [diary](skills/diary/) | 今日の日付で日記テンプレートファイルを作成 | `/diary` |
+## Skills 一覧
 
-### X（旧Twitter）運用
+| # | Skill | Command | Description | Lines |
+|---|-------|---------|-------------|-------|
+| 1 | [backend-patterns](skills/backend-patterns/) |  | Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes. | 587 |
+| 2 | [clickhouse-io](skills/clickhouse-io/) |  | ClickHouse database patterns, query optimization, analytics, and data engineering best practices for high-performance analytical workloads. | 429 |
+| 3 | [coding-standards](skills/coding-standards/) |  | Universal coding standards, best practices, and patterns for TypeScript, JavaScript, React, and Node.js development. | 520 |
+| 4 | [continuous-learning-v2](skills/continuous-learning-v2/) |  | Instinct-based learning system that observes sessions via hooks, creates atomic instincts with confidence scoring, and evolves them into skills/commands/agents. | 257 |
+| 5 | [continuous-learning](skills/continuous-learning/) |  | Automatically extract reusable patterns from Claude Code sessions and save them as learned skills for future use. | 110 |
+| 6 | [creator-marketing-system](skills/creator-marketing-system/) | `/creator-marketing-system` | クリエイター（配信者、ブロガー、起業家）がゼロからオーディエンスを構築するための対話型マーケティング戦略フレームワーク。段階的に質問を投げかけ、事業計画書（Markdown）を生成する。 | 74 |
+| 7 | [diary](skills/diary/) |  | 今日の日付で日記テンプレートファイルを作成する | 80 |
+| 8 | [eval-harness](skills/eval-harness/) |  | Formal evaluation framework for Claude Code sessions implementing eval-driven development (EDD) principles | 227 |
+| 9 | [frontend-patterns](skills/frontend-patterns/) |  | Frontend development patterns for React, Next.js, state management, performance optimization, and UI best practices. | 631 |
+| 10 | [golang-patterns](skills/golang-patterns/) |  | Idiomatic Go patterns, best practices, and conventions for building robust, efficient, and maintainable Go applications. | 673 |
+| 11 | [golang-testing](skills/golang-testing/) |  | Go testing patterns including table-driven tests, subtests, benchmarks, fuzzing, and test coverage. Follows TDD methodology with idiomatic Go practices. | 719 |
+| 12 | [iterative-retrieval](skills/iterative-retrieval/) |  | Pattern for progressively refining context retrieval to solve the subagent context problem | 202 |
+| 13 | [multi-agent-orchestrator](skills/multi-agent-orchestrator/) | `/multi-agent` | タスクを分析し、最適なエージェント構成を自動選定して並列実行するマルチエージェントオーケストレーター | 288 |
+| 14 | [multi-stage-research](skills/multi-stage-research/) | `/research` | 複数のサブエージェントで並列調査→統合→ファクトチェック→最終レポート生成の多段階リサーチを実行する | 144 |
+| 15 | [news-insight](skills/news-insight/) |  | ネットニュースのURLを深掘りリサーチし、自分や他者の状況に活かせるインサイトと実装プランを生成する。共有可能なレポート出力対応 | 393 |
+| 16 | [postgres-patterns](skills/postgres-patterns/) |  | PostgreSQL database patterns for query optimization, schema design, indexing, and security. Based on Supabase best practices. | 146 |
+| 17 | [project-guidelines-example](skills/project-guidelines-example/) |  | - | 345 |
+| 18 | [security-review](skills/security-review/) |  | Use this skill when adding authentication, handling user input, working with secrets, creating API endpoints, or implementing payment/sensitive features. Provides comprehensive security checklist and patterns. | 494 |
+| 19 | [skill-finder](skills/skill-finder/) | `/skill-find` | 会話の文脈から最適なスキル・コマンドを推論し、使用頻度と効果予測でランク付けして提案する「スキルを探すスキル」 | 92 |
+| 20 | [strategic-compact](skills/strategic-compact/) |  | Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction. | 63 |
+| 21 | [survey-reader](skills/survey-reader/) | `/survey-read` | Supabaseに保存されたアンケート結果・顧客データを読み込み、マーケティング活用のための分析を行う | 128 |
+| 22 | [tdd-workflow](skills/tdd-workflow/) |  | Use this skill when writing new features, fixing bugs, or refactoring code. Enforces test-driven development with 80%+ coverage including unit, integration, and E2E tests. | 409 |
+| 23 | [verification-loop](skills/verification-loop/) |  | - | 120 |
+| 24 | [worker-assignment](skills/worker-assignment/) | `/assign-workers` | 設計書のタスクに作業者（ツール＋モデル）を自動割り当てし、コスト見積もりを付与する。既存設計書の更新にも対応。 | 119 |
+| 25 | [x-daily](skills/x-daily/) | `/x-daily` | 自分のX（旧Twitter）アカウントの直近投稿データを取得・分析し、日次パフォーマンスレポートを生成する | 102 |
+| 26 | [x-image](skills/x-image/) | `/x-image` | X投稿に添付する画像のプロンプト生成・画像仕様を設計する | 88 |
+| 27 | [x-manager](skills/x-manager/) | `/x-manager` | X（旧Twitter）運用に関する複数スキル（x-daily, x-trend, x-writing, x-image）を統括し、ワンストップで実行するマネージャープラグイン | 121 |
+| 28 | [x-trend](skills/x-trend/) | `/x-trend` | X（旧Twitter）の競合アカウントやトレンドデータを分析し、市場動向レポートを生成する | 98 |
+| 29 | [x-writing](skills/x-writing/) | `/x-write` | 分析・リサーチ結果を踏まえてX（旧Twitter）投稿用の文章を生成する | 89 |
 
-| Skill | Description | Command |
-|-------|-------------|---------|
-| [x-manager](skills/x-manager/) | X運用スキルを統括。分析→戦略→コンテンツ作成をワンストップ実行 | `/x-manager` |
-| [x-daily](skills/x-daily/) | 自分のX投稿データを分析し日次パフォーマンスレポートを生成 | `/x-daily` |
-| [x-trend](skills/x-trend/) | 競合アカウント・トレンドデータを分析し市場動向レポートを生成 | `/x-trend` |
-| [x-writing](skills/x-writing/) | 分析・リサーチ結果を踏まえてX投稿文章を生成 | `/x-write` |
-| [x-image](skills/x-image/) | X投稿用画像の仕様設計・プロンプト生成 | `/x-image` |
+---
 
-### リサーチ・データ分析
+## Hooks 一覧
 
-| Skill | Description | Command |
-|-------|-------------|---------|
-| [multi-stage-research](skills/multi-stage-research/) | サブエージェント並列調査→統合→ファクトチェック→レポート生成 | `/research` |
-| [survey-reader](skills/survey-reader/) | Supabase/ローカルのアンケートデータを読み込み分析 | `/survey-read` |
+| Hook | Description |
+|------|-------------|
+| [session-log](hooks/session-log/) | Save Claude Code session log automatically on session end |
+| [skill-sync](hooks/skill-sync/) | スキル一覧からREADME.mdを自動生成する |
 
-### 開発ワークフロー
+---
 
-| Skill | Description |
-|-------|-------------|
-| [coding-standards](skills/coding-standards/) | TypeScript/JavaScript/React/Node.js のコーディング規約 |
-| [tdd-workflow](skills/tdd-workflow/) | TDD（テスト駆動開発）ワークフロー。80%+カバレッジ |
-| [eval-harness](skills/eval-harness/) | Claude Codeセッションの評価フレームワーク (EDD) |
-| [verification-loop](skills/verification-loop/) | セッション検証システム |
-| [security-review](skills/security-review/) | セキュリティチェックリスト・パターン集 |
-
-### 学習・最適化
-
-| Skill | Description |
-|-------|-------------|
-| [continuous-learning](skills/continuous-learning/) | セッションからパターンを抽出し再利用可能スキルとして保存 |
-| [continuous-learning-v2](skills/continuous-learning-v2/) | Instinctベースの学習システム。hooks/agents/commands付き |
-| [strategic-compact](skills/strategic-compact/) | コンテキスト圧縮の最適タイミングを提案 |
-| [iterative-retrieval](skills/iterative-retrieval/) | サブエージェントのコンテキスト問題を解決する段階的検索 |
-
-### 技術パターン集
-
-| Skill | Description |
-|-------|-------------|
-| [backend-patterns](skills/backend-patterns/) | Node.js/Express/Next.js バックエンドパターン |
-| [frontend-patterns](skills/frontend-patterns/) | React/Next.js フロントエンドパターン |
-| [golang-patterns](skills/golang-patterns/) | Go言語のイディオムとベストプラクティス |
-| [golang-testing](skills/golang-testing/) | Goテストパターン（テーブル駆動、ベンチマーク、ファジング） |
-| [postgres-patterns](skills/postgres-patterns/) | PostgreSQL クエリ最適化・スキーマ設計 |
-| [clickhouse-io](skills/clickhouse-io/) | ClickHouse 分析クエリ最適化 |
-| [project-guidelines-example](skills/project-guidelines-example/) | プロジェクト固有スキルのテンプレート例 |
-
-## Hooks一覧
-
-| Hook | Trigger | Description |
-|------|---------|-------------|
-| [session-log](hooks/session-log/) | Stop | セッション終了時に会話ログを `~/Dev/.claude-logs/` に自動保存 |
-
-## インストール
+## セットアップ
 
 ### 全スキルをインストール
 
@@ -79,8 +66,7 @@ bash install.sh
 ### 個別スキルをインストール
 
 ```bash
-# 例: worker-assignment のみ
-cp -r skills/worker-assignment ~/.claude/skills/
+cp -r skills/<skill-name> ~/.claude/skills/
 ```
 
 ### アンインストール
@@ -89,37 +75,22 @@ cp -r skills/worker-assignment ~/.claude/skills/
 bash uninstall.sh
 ```
 
-## スキルの構造
+## スキルの管理
 
-各スキルは [Agent Skills 仕様](https://github.com/anthropics/skills) に準拠:
+### 追加
+`~/.claude/skills/` にスキルを追加すると、PostToolUse hookで自動的にこのリポジトリに同期・プッシュされます。
+
+### 削除
+1. `~/.claude/skills/<skill-name>/` を削除
+2. `skills/<skill-name>/` をこのリポジトリからも削除
+3. コミット＆プッシュ
+
+### 構造
 
 ```
 skill-name/
-├── SKILL.md          # メインファイル（YAMLフロントマター + 指示）
-├── scripts/          # ヘルパースクリプト（オプション）
-├── commands/         # サブコマンド（オプション）
-├── agents/           # エージェント定義（オプション）
-├── hooks/            # フック（オプション）
-└── config.json       # 設定（オプション）
+└── SKILL.md    # フロントマター（name, description, command）+ 指示
 ```
-
-## 自作スキルの追加方法
-
-1. `skills/` に新しいディレクトリを作成
-2. `SKILL.md` を作成（フロントマター必須）:
-
-```markdown
----
-name: my-skill
-description: スキルの説明
----
-
-# スキル名
-
-指示内容...
-```
-
-3. `install.sh` を実行してシンボリックリンクを更新
 
 ## License
 

@@ -45,6 +45,15 @@ fi
 git commit -m "feat: sync skill '$SKILL_NAME'" 2>> "$LOG_FILE"
 log "Committed skill: $SKILL_NAME"
 
+# README.md を自動再生成
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+bash "$SCRIPT_DIR/generate-readme.sh" 2>> "$LOG_FILE"
+git add README.md 2>> "$LOG_FILE"
+if ! git diff --cached --quiet; then
+  git commit -m "docs: update README (auto-generated)" 2>> "$LOG_FILE"
+  log "README updated"
+fi
+
 # バックグラウンドでpush（hookの実行時間を短縮）
 git push origin master >> "$LOG_FILE" 2>&1 &
 log "Push initiated for $SKILL_NAME"
