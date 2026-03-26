@@ -1,3 +1,9 @@
+---
+name: verification-loop
+description: コード変更後の品質ゲート検証を自動実行するシステム
+category: 開発ワークフロー
+---
+
 # Verification Loop Skill
 
 A comprehensive verification system for Claude Code sessions.

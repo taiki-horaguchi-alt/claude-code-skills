@@ -1,6 +1,7 @@
 ---
 name: skill-finder
 description: 会話の文脈から最適なスキル・コマンドを推論し、使用頻度と効果予測でランク付けして提案する「スキルを探すスキル」
+category: ユーティリティ
 command: /skill-find
 version: 2.0.0
 tags:

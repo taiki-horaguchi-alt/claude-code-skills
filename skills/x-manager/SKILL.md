@@ -1,6 +1,7 @@
 ---
 name: x-manager
 description: X（旧Twitter）運用に関する複数スキル（x-daily, x-trend, x-writing, x-image）を統括し、ワンストップで実行するマネージャープラグイン
+category: X運用
 command: /x-manager
 version: 1.0.0
 tags:

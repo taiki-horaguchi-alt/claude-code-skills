@@ -1,6 +1,7 @@
 ---
 name: coding-standards
 description: TypeScript/JavaScript/React/Node.jsの汎用コーディング規約とベストプラクティス集
+category: ベストプラクティス
 ---
 
 # Coding Standards & Best Practices

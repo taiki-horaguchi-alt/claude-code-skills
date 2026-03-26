@@ -1,6 +1,7 @@
 ---
 name: creator-marketing-system
 description: クリエイター（配信者、ブロガー、起業家）がゼロからオーディエンスを構築するための対話型マーケティング戦略フレームワーク。段階的に質問を投げかけ、事業計画書（Markdown）を生成する。
+category: ユーティリティ
 command: /creator-marketing-system
 version: 1.0.0
 tags:

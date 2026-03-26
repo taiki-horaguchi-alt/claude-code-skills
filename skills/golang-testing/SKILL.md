@@ -1,6 +1,7 @@
 ---
 name: golang-testing
 description: Goのテストパターン集。テーブル駆動テスト、サブテスト、ベンチマーク、ファジング、カバレッジ。TDD方式
+category: ベストプラクティス
 ---
 
 # Go Testing Patterns

@@ -1,6 +1,7 @@
 ---
 name: survey-reader
 description: Supabaseに保存されたアンケート結果・顧客データを読み込み、マーケティング活用のための分析を行う
+category: リサーチ・分析
 command: /survey-read
 version: 1.0.0
 tags:

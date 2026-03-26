@@ -1,6 +1,7 @@
 ---
 name: x-trend
 description: X（旧Twitter）の競合アカウントやトレンドデータを分析し、市場動向レポートを生成する
+category: X運用
 command: /x-trend
 version: 1.0.0
 tags:

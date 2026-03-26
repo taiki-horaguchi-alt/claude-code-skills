@@ -1,6 +1,7 @@
 ---
 name: frontend-patterns
 description: React/Next.jsのフロントエンド開発パターン、状態管理、パフォーマンス最適化のベストプラクティス集
+category: ベストプラクティス
 ---
 
 # Frontend Development Patterns

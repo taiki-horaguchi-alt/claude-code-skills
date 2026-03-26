@@ -1,6 +1,7 @@
 ---
 name: tdd-workflow
 description: テスト駆動開発（TDD）ワークフロー。ユニット/インテグレーション/E2Eテストで80%以上のカバレッジを確保
+category: 開発ワークフロー
 ---
 
 # Test-Driven Development Workflow

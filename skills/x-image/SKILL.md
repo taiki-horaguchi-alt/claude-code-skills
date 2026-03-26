@@ -1,6 +1,7 @@
 ---
 name: x-image
 description: X投稿に添付する画像のプロンプト生成・画像仕様を設計する
+category: X運用
 command: /x-image
 version: 1.0.0
 tags:

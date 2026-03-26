@@ -1,6 +1,7 @@
 ---
 name: continuous-learning-v2
 description: hooksでセッションを観察し、信頼度スコア付きインスティンクトを生成してスキル/コマンド/エージェントに進化させる学習システム
+category: エージェント・学習
 version: 2.0.0
 ---
 

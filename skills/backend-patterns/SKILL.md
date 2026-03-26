@@ -1,6 +1,7 @@
 ---
 name: backend-patterns
 description: Node.js/Express/Next.jsのバックエンドアーキテクチャパターン、API設計、DB最適化のベストプラクティス集
+category: ベストプラクティス
 ---
 
 # Backend Development Patterns

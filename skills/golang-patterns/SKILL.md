@@ -1,6 +1,7 @@
 ---
 name: golang-patterns
 description: Go言語のイディオムパターン、堅牢で保守しやすいアプリケーション構築のベストプラクティス集
+category: ベストプラクティス
 ---
 
 # Go Development Patterns

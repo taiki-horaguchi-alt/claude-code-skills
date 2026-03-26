@@ -1,6 +1,7 @@
 ---
 name: diary
 description: 今日の日付で日記テンプレートファイルを作成する
+category: ユーティリティ
 user_invocable: true
 ---
 

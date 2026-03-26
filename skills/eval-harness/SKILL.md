@@ -1,6 +1,7 @@
 ---
 name: eval-harness
 description: Claude Codeセッションの評価フレームワーク。評価駆動開発（EDD）原則に基づく品質測定
+category: 開発ワークフロー
 tools: Read, Write, Edit, Bash, Grep, Glob
 ---
 

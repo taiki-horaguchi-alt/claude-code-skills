@@ -1,6 +1,7 @@
 ---
 name: x-writing
 description: 分析・リサーチ結果を踏まえてX（旧Twitter）投稿用の文章を生成する
+category: X運用
 command: /x-write
 version: 1.0.0
 tags:

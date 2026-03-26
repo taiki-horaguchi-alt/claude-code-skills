@@ -1,6 +1,7 @@
 ---
 name: postgres-patterns
 description: PostgreSQLのクエリ最適化、スキーマ設計、インデックス、セキュリティのパターン集。Supabaseベストプラクティス準拠
+category: ベストプラクティス
 ---
 
 # PostgreSQL Patterns

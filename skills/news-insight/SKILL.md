@@ -1,6 +1,7 @@
 ---
 name: news-insight
 description: ネットニュースのURLを深掘りリサーチし、自分や他者の状況に活かせるインサイトと実装プランを生成する。共有可能なレポート出力対応
+category: リサーチ・分析
 user-invocable: true
 argument-hint: "<URL> [--self|--share|--both] [--for <name>]"
 ---

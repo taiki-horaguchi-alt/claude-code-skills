@@ -1,6 +1,7 @@
 ---
 name: multi-stage-research
 description: 複数のサブエージェントで並列調査→統合→ファクトチェック→最終レポート生成の多段階リサーチを実行する
+category: リサーチ・分析
 command: /research
 version: 1.0.0
 tags:

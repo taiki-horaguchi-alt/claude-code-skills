@@ -1,6 +1,7 @@
 ---
 name: clickhouse-io
 description: ClickHouseのクエリ最適化、分析パターン、データエンジニアリングのベストプラクティス集
+category: ベストプラクティス
 ---
 
 # ClickHouse Analytics Patterns

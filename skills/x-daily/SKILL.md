@@ -1,6 +1,7 @@
 ---
 name: x-daily
 description: 自分のX（旧Twitter）アカウントの直近投稿データを取得・分析し、日次パフォーマンスレポートを生成する
+category: X運用
 command: /x-daily
 version: 1.0.0
 tags:

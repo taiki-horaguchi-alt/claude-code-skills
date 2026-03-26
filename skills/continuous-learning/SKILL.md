@@ -1,6 +1,7 @@
 ---
 name: continuous-learning
 description: Claude Codeセッションから再利用可能なパターンを自動抽出し、学習済みスキルとして保存する
+category: エージェント・学習
 ---
 
 # Continuous Learning Skill

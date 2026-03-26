@@ -1,6 +1,7 @@
 ---
 name: multi-agent-orchestrator
 description: タスクを分析し、最適なエージェント構成を自動選定して並列実行するマルチエージェントオーケストレーター
+category: エージェント・学習
 command: /multi-agent
 version: 1.0.0
 tags:

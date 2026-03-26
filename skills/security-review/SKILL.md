@@ -1,6 +1,7 @@
 ---
 name: security-review
 description: 認証、ユーザー入力処理、シークレット管理、APIエンドポイント、決済機能のセキュリティチェックリストとパターン集
+category: ベストプラクティス
 ---
 
 # Security Review Skill

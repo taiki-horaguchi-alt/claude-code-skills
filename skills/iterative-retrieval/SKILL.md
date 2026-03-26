@@ -1,6 +1,7 @@
 ---
 name: iterative-retrieval
 description: サブエージェントのコンテキスト問題を解決する段階的なコンテキスト検索パターン
+category: エージェント・学習
 ---
 
 # Iterative Retrieval Pattern

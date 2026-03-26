@@ -1,6 +1,7 @@
 ---
 name: worker-assignment
 description: 設計書のタスクに作業者（ツール＋モデル）を自動割り当てし、コスト見積もりを付与する。既存設計書の更新にも対応。
+category: 開発ワークフロー
 command: /assign-workers
 version: 1.0.0
 tags:

@@ -1,6 +1,7 @@
 ---
 name: strategic-compact
 description: タスクフェーズの論理的な区切りでコンテキスト圧縮を提案し、文脈を保持する
+category: エージェント・学習
 ---
 
 # Strategic Compact Skill
