@@ -4,14 +4,14 @@
 
 Claude Code のカスタムスキル (`~/.claude/skills/`) と自動フック集。
 
-**29 skills** | **2 hooks**
+**28 skills** | **2 hooks**
 
 ### 目次
 - [ベストプラクティス](#ベストプラクティス)（8）
 - [開発ワークフロー](#開発ワークフロー)（4）
 - [X運用](#X運用)（5）
 - [リサーチ・分析](#リサーチ-分析)（3）
-- [エージェント・学習](#エージェント-学習)（5）
+- [エージェント・学習](#エージェント-学習)（4）
 - [ユーティリティ](#ユーティリティ)（4）
 
 ---
@@ -63,8 +63,9 @@ Claude Code のカスタムスキル (`~/.claude/skills/`) と自動フック集
 | [continuous-learning-v2](skills/continuous-learning-v2/) |  | hooksでセッションを観察し、信頼度スコア付きインスティンクトを生成してスキル/コマンド/エージェントに進化させる学習システム |
 | [continuous-learning](skills/continuous-learning/) |  | Claude Codeセッションから再利用可能なパターンを自動抽出し、学習済みスキルとして保存する |
 | [iterative-retrieval](skills/iterative-retrieval/) |  | サブエージェントのコンテキスト問題を解決する段階的なコンテキスト検索パターン |
-| [multi-agent-orchestrator](skills/multi-agent-orchestrator/) | `/multi-agent` | タスクを分析し、最適なエージェント構成を自動選定して並列実行するマルチエージェントオーケストレーター |
 | [strategic-compact](skills/strategic-compact/) |  | タスクフェーズの論理的な区切りでコンテキスト圧縮を提案し、文脈を保持する |
+
+> **Note**: `multi-agent-orchestrator` は `~/.claude/rules/agents.md`（自動読み込み）+ `/multi-agent` コマンド（`~/.claude/commands/multi-agent.md`）に統合されました。
 
 ### ユーティリティ
 
