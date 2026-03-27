@@ -4,15 +4,15 @@
 
 Claude Code のカスタムスキル (`~/.claude/skills/`) と自動フック集。
 
-**28 skills** | **2 hooks**
+**31 skills** | **4 hooks**
 
 ### 目次
 - [ベストプラクティス](#ベストプラクティス)（8）
-- [開発ワークフロー](#開発ワークフロー)（4）
-- [X運用](#X運用)（5）
+- [開発ワークフロー](#開発ワークフロー)（5）
+- [X運用](#X運用)（6）
 - [リサーチ・分析](#リサーチ-分析)（3）
 - [エージェント・学習](#エージェント-学習)（4）
-- [ユーティリティ](#ユーティリティ)（4）
+- [ユーティリティ](#ユーティリティ)（5）
 
 ---
 
@@ -33,6 +33,7 @@ Claude Code のカスタムスキル (`~/.claude/skills/`) と自動フック集
 
 | Skill | Command | Description |
 |-------|---------|-------------|
+| [docker-optimize](skills/docker-optimize/) | `/docker-opt` | Docker最適化スキル。イメージサイズ削減、ビルド高速化、セキュリティ強化、マルチステージビルド。Dockerfileの改善時に使用。 |
 | [eval-harness](skills/eval-harness/) |  | Claude Codeセッションの評価フレームワーク。評価駆動開発（EDD）原則に基づく品質測定 |
 | [tdd-workflow](skills/tdd-workflow/) |  | テスト駆動開発（TDD）ワークフロー。ユニット/インテグレーション/E2Eテストで80%以上のカバレッジを確保 |
 | [verification-loop](skills/verification-loop/) |  | コード変更後の品質ゲート検証を自動実行するシステム |
@@ -46,6 +47,7 @@ Claude Code のカスタムスキル (`~/.claude/skills/`) と自動フック集
 | [x-image](skills/x-image/) | `/x-image` | X投稿に添付する画像のプロンプト生成・画像仕様を設計する |
 | [x-manager](skills/x-manager/) | `/x-manager` | X（旧Twitter）運用に関する複数スキル（x-daily, x-trend, x-writing, x-image）を統括し、ワンストップで実行するマネージャープラグイン |
 | [x-trend](skills/x-trend/) | `/x-trend` | X（旧Twitter）の競合アカウントやトレンドデータを分析し、市場動向レポートを生成する |
+| [x-twitter-growth](skills/x-twitter-growth/) | `/x-growth` | X/Twitterグロースエンジン。オーディエンス構築、バイラルコンテンツ作成、エンゲージメント分析。プロフィール最適化、アルゴリズム攻略、競合分析、スレッド設計。 |
 | [x-writing](skills/x-writing/) | `/x-write` | 分析・リサーチ結果を踏まえてX（旧Twitter）投稿用の文章を生成する |
 
 ### リサーチ・分析
@@ -65,14 +67,13 @@ Claude Code のカスタムスキル (`~/.claude/skills/`) と自動フック集
 | [iterative-retrieval](skills/iterative-retrieval/) |  | サブエージェントのコンテキスト問題を解決する段階的なコンテキスト検索パターン |
 | [strategic-compact](skills/strategic-compact/) |  | タスクフェーズの論理的な区切りでコンテキスト圧縮を提案し、文脈を保持する |
 
-> **Note**: `multi-agent-orchestrator` は `~/.claude/rules/agents.md`（自動読み込み）+ `/multi-agent` コマンド（`~/.claude/commands/multi-agent.md`）に統合されました。
-
 ### ユーティリティ
 
 | Skill | Command | Description |
 |-------|---------|-------------|
 | [creator-marketing-system](skills/creator-marketing-system/) | `/creator-marketing-system` | クリエイター（配信者、ブロガー、起業家）がゼロからオーディエンスを構築するための対話型マーケティング戦略フレームワーク。段階的に質問を投げかけ、事業計画書（Markdown）を生成する。 |
 | [diary](skills/diary/) |  | 今日の日付で日記テンプレートファイルを作成する |
+| [pdf](skills/pdf/) |  | PDF操作スキル。読み取り、テキスト/テーブル抽出、結合、分割、新規作成、フォーム入力、暗号化、OCRなど。.pdfファイルに関する作業時に使用。 |
 | [project-guidelines-example](skills/project-guidelines-example/) |  | プロジェクト固有スキルのテンプレート例 |
 | [skill-finder](skills/skill-finder/) | `/skill-find` | 会話の文脈から最適なスキル・コマンドを推論し、使用頻度と効果予測でランク付けして提案する「スキルを探すスキル」 |
 
@@ -82,7 +83,9 @@ Claude Code のカスタムスキル (`~/.claude/skills/`) と自動フック集
 
 | Hook | Description |
 |------|-------------|
+| [dashboard-sync](hooks/dashboard-sync/) | Auto-update PROJECT_DASHBOARD.md with latest git activity |
 | [session-log](hooks/session-log/) | Save Claude Code session log automatically on session end |
+| [skill-retro](hooks/skill-retro/) | Skill Retrospective Trigger - Stop Hook |
 | [skill-sync](hooks/skill-sync/) | スキル一覧からREADME.mdを自動生成する（カテゴリ別表示） |
 
 ---
