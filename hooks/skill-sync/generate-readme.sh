@@ -203,7 +203,7 @@ cat >> "$README" << 'FOOTER'
 ## セットアップ
 
 ```bash
-git clone https://github.com/taiki-horaguchi-alt/claude-code-skills.git
+git clone https://github.com/kamomet999/claude-code-skills.git
 cd claude-code-skills
 bash install.sh
 ```
